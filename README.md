@@ -35,8 +35,8 @@ cd <NOME_DO_DIRETORIO>
 ```
 
 ## Instale Dependências
-
-1:Execute o install.bat para instalar as dependências automaticamente.
+Abra o Cmd e digite ``` npm init ``` aperte enter até acabar!
+Execute o install.bat para instalar as dependências automaticamente.
 Ou, se o install.bat não funcionar, Instale manualmente os módulos necessários com:
 ``` npm install [node-cmd, readline, dotenv, fs, path] ```
 
