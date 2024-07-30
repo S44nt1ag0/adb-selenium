@@ -50,13 +50,13 @@ Siga as instruções fornecidas pelo aplicativo.
 Funções Básicas
 
 ``` 
-await comando.abrir(app, delay): Abre o aplicativo especificado após um delay.
-await comando.tap(x, y, delay): Realiza um clique na coordenada (x, y) com um delay.
-await comando.write(text, delay): Escreve texto no input selecionado com um delay.
-await comando.enter(delay): Pressiona a tecla Enter após um delay.
-await comando.tela(): Captura o XML da tela atual.
-await comando.close(app): Fecha o aplicativo especificado.
-await comando.scroll(delay): Rola a página com um delay.
+await comando.abrir(app, 6000) -> Responsavel por Abrir a Aplicação Escolhida, no qual o 6000 é o valor de espera apos abrir o aplicativo "pois cada app tem um delay para abrir completamente e isso voce pode editar"
+await comando.tap(x, y, 1000) -> Responsavel por executar click em alguma parte da tela, tendo 2 parametros e o delay em ms que voce pode editar, voce pode descobrir o x,y onde voce gostaria de clicar nas opções de desenvolvedor de seu aparelho e acessar a opc de "Localização do Ponteiro".
+await comando.write("algum texto", 1000) -> Responsavel por escrever em algum imput já selecionado, onde temois 2 parametros uma string e um delay.
+await comando.enter(1000) -> Responsavel por apos a escrita ou qualquer outro feito ser precionado o "enter" ou "buscar", no qual possui apenas o delay de parametro.
+await comando.tela() -> Responsavel por printar o XML da tela atual que o android esta, dando a opc de verificação se o que procura esta na pagina, pois o xml possibilita a leitura de algumas palavras chaves mostrada na pagina, simplesmente de um console.log nela e vera os dados da pagina!
+await comando.close(app) -> Responsavel por fechar a aplicação aberta, no qual temos apenas o parametro app que seria o pakage.
+await comando.scroll(1000) -> Responsavel por dar Scroll na Pagina, seguido de um delay de 1000ms.
 
 ```
 
