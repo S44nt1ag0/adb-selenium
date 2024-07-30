@@ -29,7 +29,7 @@ Este projeto configura e automatiza a interação com um aplicativo emulador And
 ## Baixe o Projeto
 
 1: Clone este repositório:
-```sh
+```
 git clone <URL_DO_REPOSITORIO>
 cd <NOME_DO_DIRETORIO>
 ```
@@ -38,6 +38,28 @@ cd <NOME_DO_DIRETORIO>
 
 1:Execute o install.bat para instalar as dependências automaticamente.
 Ou, se o install.bat não funcionar, Instale manualmente os módulos necessários com:
-```sh npm install node-cmd readline dotenv ```
+``` npm install [node-cmd, readline, dotenv, fs, path] ```
+
+##🚀 Uso
+
+Execute o projeto com
+``` node app.js ```
+
+Siga as instruções fornecidas pelo aplicativo.
+
+Funções Básicas
+
+``` 
+await comando.abrir(app, delay): Abre o aplicativo especificado após um delay.
+await comando.tap(x, y, delay): Realiza um clique na coordenada (x, y) com um delay.
+await comando.write(text, delay): Escreve texto no input selecionado com um delay.
+await comando.enter(delay): Pressiona a tecla Enter após um delay.
+await comando.tela(): Captura o XML da tela atual.
+await comando.close(app): Fecha o aplicativo especificado.
+await comando.scroll(delay): Rola a página com um delay.
+
+```
+
+## Criação de Configuração
 
 
