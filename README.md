@@ -87,10 +87,11 @@ module.exports = {
 Lembre-se de colocar esse código na pasta ./configs e com a extensão .js. Para escolher sua configuração, inicie o programa com node app e selecione sua configuração.
 
 ##⚠️ Recomendações
+
 Utilize o emulador NOX para melhores resultados.
 Ajuste os delays e coordenadas conforme necessário para seu aplicativo e emulador.
 
-##💬 Suporte
-Se você tiver problemas ou perguntas, sinta-se à vontade para abrir uma issue neste repositório ou entrar em contato.
+## 💬 Suporte
 
+Se você tiver problemas ou perguntas, sinta-se à vontade para abrir uma issue neste repositório ou entrar em contato.
 Espero que este README.md ajude a documentar seu projeto! Se precisar de mais alguma coisa, estou à disposição.
