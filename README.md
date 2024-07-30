@@ -23,3 +23,21 @@ Este projeto configura e automatiza a interação com um aplicativo emulador And
    ```sh
    adb kill-server
    adb start-server
+
+4) Após obter o ID do dispositivo (ex: 127.0.0.1:62025), adicione-o ao arquivo .env.
+   
+## Baixe o Projeto
+
+1: Clone este repositório:
+```sh
+git clone <URL_DO_REPOSITORIO>
+cd <NOME_DO_DIRETORIO>
+```
+
+## Instale Dependências
+
+1:Execute o install.bat para instalar as dependências automaticamente.
+Ou, se o install.bat não funcionar, Instale manualmente os módulos necessários com:
+```sh npm install node-cmd readline dotenv ```
+
+
