@@ -61,5 +61,36 @@ await comando.scroll(delay): Rola a página com um delay.
 ```
 
 ## Criação de Configuração
+Crie um arquivo de configuração em ./configs com a seguinte estrutura:
 
+```
+const comando = require("./utils/shell");
+var cmd = require('node-cmd');
 
+async function principal(device, app, config) {
+    console.log({
+        iniciado: true,
+        device: device,
+        app: app,
+        config: config
+    });
+    
+    // Códigos personalizados aqui //
+}
+
+module.exports = {
+    principal
+};
+
+```
+
+Lembre-se de colocar esse código na pasta ./configs e com a extensão .js. Para escolher sua configuração, inicie o programa com node app e selecione sua configuração.
+
+##⚠️ Recomendações
+Utilize o emulador NOX para melhores resultados.
+Ajuste os delays e coordenadas conforme necessário para seu aplicativo e emulador.
+
+##💬 Suporte
+Se você tiver problemas ou perguntas, sinta-se à vontade para abrir uma issue neste repositório ou entrar em contato.
+
+Espero que este README.md ajude a documentar seu projeto! Se precisar de mais alguma coisa, estou à disposição.
